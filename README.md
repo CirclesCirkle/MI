@@ -121,20 +121,20 @@ MIF是MI提供给想要使用MI进行创造的人的一个应用程序接口
 核心函数详解：
 函数   参数说明    功能描述
 
-> mif.modem()    无    自动检测并打开可用的调制解调器，返回找到的侧边名称
-> mif.idverifyRes()    SENDER: 目标ID, SP: 子协议名, HOST: 服务名    发送ID验证响应，用于服务发现确认
-> mif.lookup()    HOST: 服务名, SP: 子协议, CAN: 目标网络, QUEUE: 是否用队列    在指定网络中查找服务提供者的ID
-> mif.receive()    PS: 协议集, BLACK: 黑名单, WHITE: 白名单, CAN: 网络名    带协议过滤的网络接收函数
-> mif.capturefunc()    SP: 协议集, CAN: 网络名    协议抓包专用接收函数，返回时间戳和包内容
-> mif.post()    ID: 目标, CAN: 网络, PACK: 数据包, ROUTE: 路由方式, SINGLE: 是否等待回包    通用消息发送函数，支持多种路由模式
-> mif.clientLink()    CAN: 网络, INFO: 请求信息, ROUTE: 路由方式    客户端请求页面服务的快捷函数
-> mif.clientDownload()    CAN, INFO, ROUTE    客户端请求下载文件的快捷函数
-> mif.clientUpload()    CAN, INFO, ROUTE    客户端上传文件的快捷函数
-> mif.askSignUp()    CAN: 服务所在网络, SPN: 服务名    向RCS注册自己的服务
-> mif.serverLTP()    SENDER, PACK, ROUTE    服务器处理页面请求的内部函数
-> mif.serverFDP()    SENDER, PACK, ROUTE    服务器处理下载请求的内部函数
-> mif.serverFUP()    PACK, ROUTE    服务器处理上传请求的内部函数
-> mif.createServer()    HOST: 服务名, CAN: 网络, ROUTE: 路由方式    一键创建符合MI规范的服务器
+> mif.modem()    无    自动检测并打开可用的调制解调器，返回找到的侧边名称    
+> mif.idverifyRes()    SENDER: 目标ID, SP: 子协议名, HOST: 服务名    发送ID验证响应，用于服务发现确认     
+> mif.lookup()    HOST: 服务名, SP: 子协议, CAN: 目标网络, QUEUE: 是否用队列    在指定网络中查找服务提供者的ID     
+> mif.receive()    PS: 协议集, BLACK: 黑名单, WHITE: 白名单, CAN: 网络名    带协议过滤的网络接收函数     
+> mif.capturefunc()    SP: 协议集, CAN: 网络名    协议抓包专用接收函数，返回时间戳和包内容     
+> mif.post()    ID: 目标, CAN: 网络, PACK: 数据包, ROUTE: 路由方式, SINGLE: 是否等待回包    通用消息发送函数，支持多种路由模式     
+> mif.clientLink()    CAN: 网络, INFO: 请求信息, ROUTE: 路由方式    客户端请求页面服务的快捷函数     
+> mif.clientDownload()    CAN, INFO, ROUTE    客户端请求下载文件的快捷函数     
+> mif.clientUpload()    CAN, INFO, ROUTE    客户端上传文件的快捷函数     
+> mif.askSignUp()    CAN: 服务所在网络, SPN: 服务名    向RCS注册自己的服务     
+> mif.serverLTP()    SENDER, PACK, ROUTE    服务器处理页面请求的内部函数     
+> mif.serverFDP()    SENDER, PACK, ROUTE    服务器处理下载请求的内部函数     
+> mif.serverFUP()    PACK, ROUTE    服务器处理上传请求的内部函数     
+> mif.createServer()    HOST: 服务名, CAN: 网络, ROUTE: 路由方式    一键创建符合MI规范的服务器     
 
 ### 7. Crackcirle 加密
 
